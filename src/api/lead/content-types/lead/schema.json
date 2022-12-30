@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "lead",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "legalEntity",
+        "individual"
+      ]
+    },
+    "data": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "created"
+      ]
+    },
+    "leadUpdates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lead-update.lead-update",
+      "mappedBy": "lead"
+    }
+  }
+}

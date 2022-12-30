@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lead_updates",
+  "info": {
+    "singularName": "lead-update",
+    "pluralName": "lead-updates",
+    "displayName": "leadUpdate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comments": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "created",
+        "call",
+        "visit"
+      ]
+    },
+    "lead": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lead.lead",
+      "inversedBy": "leadUpdates"
+    }
+  }
+}
