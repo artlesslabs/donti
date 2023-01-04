@@ -10,9 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.4.7",
-    "@strapi/plugin-users-permissions": "4.4.7",
-    "@strapi/strapi": "4.4.7",
+    "@artlesslabs/soft-delete": "^0.0.5",
+    "@artlesslabs/users-permissions": "^4.5.12",
+    "@strapi/plugin-i18n": "4.5.1",
+    "@strapi/strapi": "4.5.1",
     "better-sqlite3": "7.4.6",
     "mysql": "^2.18.1"
   },
