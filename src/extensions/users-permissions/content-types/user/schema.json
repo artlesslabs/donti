@@ -56,6 +56,13 @@
       "default": false,
       "configurable": false
     },
+    "profiles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.profile",
+      "inversedBy": "users",
+      "configurable": false
+    },
     "role": {
       "type": "relation",
       "relation": "manyToOne",
@@ -63,19 +70,13 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "permissions": {
-      "type": "json"
-    },
     "person": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::person.person"
     },
-    "profiles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::profile.profile",
-      "inversedBy": "users"
+    "permissions": {
+      "type": "json"
     }
   }
 }

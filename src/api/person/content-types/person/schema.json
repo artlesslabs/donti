@@ -24,11 +24,6 @@
     "contactPhone": {
       "type": "string"
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "fullname": {
       "type": "string"
     }
